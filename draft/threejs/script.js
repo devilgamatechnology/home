@@ -1,6 +1,6 @@
-import * as THREE from '../../sumber/three.js/build/three.module.js';
-import * as CANNON from '../../sumber/cannon-es/dist/cannon-es.js';
-import { OrbitControls } from '../../sumber/three.js/examples/jsm/controls/OrbitControls.js';
+import * as THREE from './three.module.js';
+import * as CANNON from './cannon-es.js';
+import { OrbitControls } from './OrbitControls.js';
 // import Stats from '../../sumber/three.js/examples/jsm/libs/stats.module.js';
 
 let scene, camera, renderer, stats, controls;
