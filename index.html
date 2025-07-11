@@ -226,6 +226,18 @@
 
             } );
 
+            const navbarNav = document.getElementById( 'navbar-nav' );
+
+            document.getElementById( 'menu' ).onclick = () => {
+                navbarNav.classList.toggle( 'active' );
+            };
+
+            document.addEventListener( 'click', event => {
+                if ( ! document.getElementById( 'menu' ).contains( event.target ) && ! navbarNav.contains( event.target ) ) {
+                    navbarNav.classList.remove('active');
+                }
+            } );
+
         } )();
     </script>
 
