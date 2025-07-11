@@ -1,4 +1,4 @@
-import * as THREE from '../sumber/three.js/build/three.module.js';
+import * as THREE from '../draft/threejs/three.module.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 300);
