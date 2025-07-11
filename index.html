@@ -40,11 +40,11 @@
 <body style="transition-duration:400ms">
 
     <!-- Scroll Progress -->
-    <div class="header">
+    <!-- <div class="header">
         <div class="progress-container">
             <div class="progress-bar" id="bar-progress"></div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Navbar start-->
     <nav class="navbar">
@@ -79,7 +79,7 @@
     <!-- About Section start -->
     <section id="about" class="about">
         <div data-aos="fade-right" data-aos-duration="1000">
-            <h2><span>Tentang</span> Kami</h2>
+            <h2><span>Tentang</span></h2>
         </div>
         <div data-aos="zoom-in" data-aos-duration="1000">
             <div class="row">
@@ -87,7 +87,7 @@
                     <img src="img/tentangkami.png" alt="Tentang Kami">
                 </div>
                 <div class="content">
-                    <h3 style="color: var(--tengah);" class="fetch1">Tentang DevilGama Technology</h3>
+                    <!-- <h3 style="color: var(--tengah);" class="fetch1">Tentang DevilGama Technology</h3> -->
                     <p class="fetch1">DevilGama Technology (DGT) adalah organisasi yang berfokus pada pengembangan teknologi, seni rupa digital, dan akses informasi elektronik.</p>
                     <p class="fetch1">DGT memiliki semangat untuk membantu seluruh warga SMA Negeri 4 Magelang dalam menghadapi masalah teknologi yang ada</p>
                     <p class="fetch1">Kami percaya bahwa teknologi memiliki potensi untuk membuat dunia menjadi tempat yang lebih baik dan DGT berdedikasi untuk menggunakan keahlian para anggotanya untuk mewujudkannya</p>
@@ -101,7 +101,7 @@
     <section id="divisi" class="divisi">
         <div data-aos="fade-right" data-aos-duration="1000">
             <h2><span>Divisi</span></h2>
-            <p>DGT terdiri atas 5 Divisi</p>
+            <p>DGT terdiri atas 5 Divisi, yakni</p>
         </div>
         <section id="sub-divisi" class="sub-divisi">
             <div data-aos-duration="1000">
@@ -201,9 +201,6 @@
     </footer>
     <!-- Footer end -->
 
-    <!-- External Local JavaScript -->
-    <script src="js/script.js"></script>
-
     <!-- Feather Icons -->
     <script>
         feather.replace();
@@ -236,6 +233,20 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- THREE.JS -->
+	<script type="importmap">
+		{
+			"imports": {
+				"three": "../sumber/three.js/build/three.module.js",
+				"three/addons/": "../sumber/three.js/examples/jsm/"
+			}
+		}
+	</script>
+
+    <canvas style="position:fixed; top:0; left:0; z-index:-1; width:100%; height:100%;"></canvas>
+
+    <script src="./script.js" type="module"></script>
 
 </body>
 </html>
